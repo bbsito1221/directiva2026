@@ -92,10 +92,43 @@ body {
 }
 .hero .liceo{
     font-weight: 400;
-    margin: 8rem;
+    padding: 8rem 0;
+    border-bottom: #333 solid 1px;
 }
 .hero .img{
     width: 100%;
+}
+.main .section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 6rem 0;
+    border-bottom: 1px solid #333;
+}
+.main .section .article{
+    width: 360px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 300px 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all .5s ease;
+    
+    
+}
+.main .section .article:hover{
+    transform: translateY(-5px);
+}
+.main .section .article .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.main .section .article p{
+    padding: 2rem;
+    background-color: #FFF3EB;
 }
 @media (min-width: 700px){
     .header .menuContenedor .botonHeader{
