@@ -140,7 +140,7 @@ body {
         display: none;
     }
     .header .menuContenedor .menuVertical{
-        top: 0;
+        top: 0 !important;
         margin: 0;
 
     }
