@@ -130,6 +130,11 @@ body {
     padding: 2rem;
     background-color: #FFF3EB;
 }
+.footer{
+    background-color: #FFF3EB;
+    padding: 8rem 0;
+    text-align: center;
+}
 @media (min-width: 700px){
     .header .menuContenedor .botonHeader{
         display: none;
