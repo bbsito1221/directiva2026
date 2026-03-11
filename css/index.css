@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;  
+}
+
+.header .menuContenedor .botonHeader{
+    padding: 2rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    z-index: 100;
+    height: 7rem;
+}
+.header .menuContenedor .menuVertical{
+    position: fixed;
+    width: 100%;
+    margin-top: 7rem;
+    z-index: 1;
+    top: -30rem;
+    transition: all .5s ease;
+
+}
+.header .menuContenedor .menuVertical ul{
+    list-style: none;
+    background-color: rgb(76, 0, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30rem;
+    
+}
+
+.header .menuContenedor .menuVertical ul li a{
+    text-decoration: none;
+    padding: 1rem ;
+    transition: all .5s ease;
+    color: black;
+
+}
+.header .menuContenedor .menuVertical ul li a:hover{
+    background-color: bisque;
+}
