@@ -1,15 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-weight: 100;  Thin 
+    font-weight: 300;   Light 
+    font-weight: 400;   Regular (normal) 
+    font-weight: 500;   Medium 
+    font-weight: 700;   Bold 
+    font-weight: 900;   Black 
+    
+*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 html{
     font-size: 62.5%;
+    
 }
 body {
     font-size: 1.6rem;  
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
-
+.header{
+    height: 7rem;
+}
 .header .menuContenedor .botonHeader{
     padding: 2rem;
     border: none;
@@ -20,6 +43,7 @@ body {
     width: 100%;
     z-index: 100;
     height: 7rem;
+    border-bottom: 1px solid #333;
 }
 .header .menuContenedor .menuVertical{
     position: fixed;
@@ -32,22 +56,70 @@ body {
 }
 .header .menuContenedor .menuVertical ul{
     list-style: none;
-    background-color: rgb(76, 0, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 30rem;
+    background-color: rgb(255, 255, 255);
     
 }
-
+.header .menuContenedor .menuVertical ul li{
+    border-bottom: 1px solid #333;
+}
 .header .menuContenedor .menuVertical ul li a{
     text-decoration: none;
-    padding: 1rem ;
     transition: all .5s ease;
     color: black;
+    width: 100%;
 
 }
 .header .menuContenedor .menuVertical ul li a:hover{
-    background-color: bisque;
+    color: #e09460;
+}
+.hero{
+    text-align: center;
+    width: 100%;
+    
+}
+.hero .mensaje{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #FFF3EB;
+}
+.hero .directiva{
+    margin: 4rem auto;
+}
+.hero .liceo{
+    font-weight: 400;
+    margin: 8rem;
+}
+.hero .img{
+    width: 100%;
+}
+@media (min-width: 700px){
+    .header .menuContenedor .botonHeader{
+        display: none;
+    }
+    .header .menuContenedor .menuVertical{
+        top: 0;
+        margin: 0;
+
+    }
+    .header .menuContenedor .menuVertical ul{
+        flex-direction: row;
+        height: 7rem;
+        gap: 10rem;
+        padding-left: 5rem;
+        justify-content: left;
+        top: 0;
+        border-bottom: 1px solid #333;
+    }
+    .header .menuContenedor .menuVertical ul li{
+        border: none;
+    }
+    .header .menuContenedor .menuVertical ul li:hover{
+        border-bottom: 1px solid #333;
+
+    }
 }
